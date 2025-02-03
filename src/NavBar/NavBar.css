@@ -1,0 +1,27 @@
+.conteneur {
+    height: 154px;
+    background-color: #F5EFEA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-bar-ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titre-tarte-ico {
+    margin-inline: 30px;
+}
+
+.titre {
+    font-family: 'Parisienne', cursive;
+}
+
+.nav-bar-text {
+    margin: 20px;
+    margin-bottom: 0px;
+}
