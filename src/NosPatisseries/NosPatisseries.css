@@ -1,0 +1,15 @@
+.nos-Patisseries-conteneur {
+    max-width: 1148px;
+    display: flex;
+    overflow: hidden;
+}
+
+.nos-Patisseries-conteneur img {
+    max-width: 710px;
+    padding: 10px;
+}
+
+.nos-Patisseries-conteneur div {
+    padding: 10px;
+    max-width: 418;
+}

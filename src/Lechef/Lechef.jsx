@@ -3,7 +3,7 @@ import './Lechef.css';
 import lechefcitronImg from './le-chef-1.jpg'
 import lechefbgImg from './le-chef-2.jpg'
 
-const NavBar = () => {
+const Lechef = () => {
     return (
         <div className='conteneur-de-milieutage-tqt'>
             <div className='le-chef-conteneur'>
@@ -20,4 +20,4 @@ const NavBar = () => {
     );
 };
 
-export default memo(NavBar);
+export default memo(Lechef);

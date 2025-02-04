@@ -8,7 +8,7 @@
 }
 
 .le-chef-text-conteneur {
-    padding: 1%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -22,7 +22,7 @@
 }
 
 .le-chef-deusieme-partie {
-    padding: 1%;
+    padding: 10px;
 }
 
 .le-chef-deusieme-partie img {
