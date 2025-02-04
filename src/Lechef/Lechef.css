@@ -1,0 +1,59 @@
+.le-chef-conteneur {
+    margin: 100px;
+    margin-top: 50px;
+    display: flex;
+    height: 70vh;
+    max-width: 1148px;
+    overflow: hidden;
+}
+
+.le-chef-text-conteneur {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.le-chef-text-conteneur img {
+    max-width: 564px;
+}
+
+.le-chef-deusieme-partie {
+    padding: 1%;
+}
+
+.le-chef-deusieme-partie img {
+    max-width: 564px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .le-chef-conteneur {
+        flex-direction: column;
+        height: auto;
+        margin: 20px;
+    }
+
+    .le-chef-text-conteneur img,
+    .le-chef-deusieme-partie img {
+        max-width: 100%;
+    }
+
+    .le-chef-text-conteneur,
+    .le-chef-deusieme-partie {
+        padding: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    .le-chef-conteneur {
+        margin: 10px;
+    }
+
+    .le-chef-text-conteneur {
+        gap: 15px;
+    }
+}
