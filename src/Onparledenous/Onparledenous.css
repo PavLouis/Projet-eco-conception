@@ -1,0 +1,14 @@
+.on-parle-de-nous {
+    max-width: 1148px;
+}
+
+.on-parle-de-nous p {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.on-parle-de-nous-logo-conteneur {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
