@@ -1,10 +1,11 @@
-.conteneur {
+.nav-bar-conteneur {
     height: 154px;
     background-color: #F5EFEA;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 50px;
 }
 
 .nav-bar-ico {
