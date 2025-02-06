@@ -1,0 +1,20 @@
+{
+  "slides": [
+    {
+      "src": "src/Carousel/assets/images/slide-1.jpg",
+      "alt": "Image 1 for carousel"
+    },
+    {
+      "src": "src/Carousel/assets/images/slide-2.jpg",
+      "alt": "Image 2 for carousel"
+    },
+    {
+      "src": "src/Carousel/assets/images/slide-3.jpg",
+      "alt": "Image 3 for carousel"
+    },
+    {
+      "src": "src/Carousel/assets/images/slide-4.jpg",
+      "alt": "Image 4 for carousel"
+    }
+  ]
+}
