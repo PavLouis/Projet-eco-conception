@@ -1,15 +1,20 @@
 [
-    {
-      "nom": "Le Chardenoux",
-      "adresse": "15 rue du Jura, Paris 11"
-    },
-    {
-      "nom": "Aux Prés",
-      "adresse": "Boulevard de l’Hôpital, Paris 15"
-    },
-    {
-      "nom": "Lugnac",
-      "adresse": "4 rue Censier, Paris 7"
-    }
-  ]
-  
+  {
+    "nom": "Le Chardenoux",
+    "adresse": "15 rue du Jura, Paris 11",
+    "lat": 48.8315,
+     "lng": 2.3550
+  },
+  {
+    "nom": "Aux Prés",
+    "adresse": "Boulevard de l’Hôpital, Paris 15",
+    "lat": 48.8357,
+    "lng": 2.3624
+  },
+  {
+    "nom": "Lugnac",
+    "adresse": "4 rue Censier, Paris 7",
+    "lat": 48.8422,
+     "lng": 2.3511
+  }
+]
