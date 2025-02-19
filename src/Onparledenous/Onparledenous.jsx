@@ -8,7 +8,7 @@ import logovogue from './logo-vogue.svg'
 
 const Onparledenous = () => {
     return (
-        <div className='conteneur-de-milieutage-tqt'>
+        <div id='gray' className='conteneur-de-milieutage-tqt'>
             <div className='on-parle-de-nous'>
                 <div>
                     <h1>On parle de nous</h1>
