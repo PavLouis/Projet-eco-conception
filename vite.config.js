@@ -11,7 +11,7 @@ export default defineConfig({
       exclude: ['**/*.svg'],
       test: /\.(jpe?g|png|webp)$/i,
       jpg: {
-        quality: 80,
+        quality: 60,
         mozjpeg: true,
       },
       png: {
@@ -19,7 +19,7 @@ export default defineConfig({
       },
       webp: {
         lossless: false,
-        quality: 80,
+        quality: 1,
       }
 
     }),
@@ -27,7 +27,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['**/*.{svg,png,jpg,jpeg}'],
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,jpg,jpeg}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,jpg,jpeg,webp}'],
         runtimeCaching: [
           {
             urlPattern: /\.(jpg|jpeg|png|svg|webp)$/i,

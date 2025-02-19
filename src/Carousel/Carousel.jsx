@@ -1,13 +1,24 @@
 import React, { useState, useEffect } from "react";
 import leftChevron from "./assets/icons/chevron-left.svg";
 import rightChevron from "./assets/icons/chevron-right.svg";
-import slidesData from "./data/carouselData.json";
 import "./Carousel.css";
+
+import slide1 from "./assets/images/slide-1.webp";
+import slide2 from "./assets/images/slide-2.webp";
+import slide3 from "./assets/images/slide-3.webp";
+import slide4 from "./assets/images/slide-4.webp";
+
+const slidesData = [
+  { src: slide1, alt: "Image 1 for carousel" },
+  { src: slide2, alt: "Image 2 for carousel" },
+  { src: slide3, alt: "Image 3 for carousel" },
+  { src: slide4, alt: "Image 4 for carousel" }
+];
 
 const Carousel = () => {
   const [slide, setSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const slides = slidesData.slides;
+  const slides = slidesData;
 
   useEffect(() => {
     if (!isPaused) {
