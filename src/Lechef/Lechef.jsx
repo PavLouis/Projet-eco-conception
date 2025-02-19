@@ -5,7 +5,7 @@ import lechefbgImg from './le-chef-2.jpg'
 
 const Lechef = () => {
     return (
-        <div className='conteneur-de-milieutage-tqt'>
+        <div id='gray' className='conteneur-de-milieutage-tqt'>
             <div className='le-chef-conteneur'>
                 <div className='le-chef-text-conteneur'>
                     <h1>Le chef</h1>

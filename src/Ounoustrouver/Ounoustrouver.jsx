@@ -18,7 +18,7 @@ const center = {
 
 const OuNousTrouver = () => {
   return (
-    <section className="ou-nous-trouver-wrapper">
+    <section id="gray-plus" className="ou-nous-trouver-wrapper">
       <div className="ou-nous-trouver">
         <h2 className="ou-nous-trouver-title">Où nous trouver ?</h2>
         <div className="ou-nous-trouver-content">

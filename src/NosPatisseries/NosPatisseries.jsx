@@ -4,7 +4,7 @@ import nospatisseries from './nos-patisseries.jpg'
 
 const NosPatisseries = () => {
     return (
-        <div id='gray' className='conteneur-de-milieutage-tqt'>
+        <div id='gray-plus' className='conteneur-de-milieutage-tqt'>
             <div className='nos-Patisseries-conteneur'>
                 <img loading="lazy" alt='le trée jolie gateux fais par notre amis le patisier' src={nospatisseries} />
                 <div>

@@ -4,7 +4,7 @@ import tarte from './tarte.png';
 
 const NavBar = () => {
   return (
-    <div className="nav-bar-conteneur">
+    <div  className="nav-bar-conteneur">
       <div className='nav-bar-ico'>
         <img src={tarte} alt="Tarte Icon" className="titre-tarte-ico" aria-label="Tarte Icon" />
         <h1 className="titre">Philippe Lugnac</h1>
