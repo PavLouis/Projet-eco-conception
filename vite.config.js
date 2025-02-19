@@ -37,7 +37,10 @@ export default defineConfig({
               expiration: {
                 maxEntries: 50,
                 maxAgeSeconds: 30 * 24 * 60 * 60 // 30 days
-              }
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              }        
             }
           }
         ]
@@ -46,11 +49,36 @@ export default defineConfig({
 
   ],
   build: {
+    target: 'es2020',
+    minify: 'terser',
     terserOptions: {
       compress: {
-        drop_console: true, // Supprimer console.log en production
+        drop_console: true,
         drop_debugger: true
       }
     },
-  }
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          main: ['./src/main.jsx']
+        },
+        assetFileNames: (assetInfo) => {
+          const info = assetInfo.name.split('.');
+          const extType = info[info.length - 1];
+          if (/css/i.test(extType)) {
+            return 'assets/styles/[name]-[hash][extname]';
+          }
+          if (/png|jpe?g|svg/i.test(extType)) {
+            return 'assets/images/[name]-[hash][extname]';
+          }
+          return 'assets/[name]-[hash][extname]';
+        },
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
+      }
+    },
+    sourcemap: process.env.NODE_ENV === 'development' ? 'inline' : false
+  },
+
 })
