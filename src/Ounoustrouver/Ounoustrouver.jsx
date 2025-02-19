@@ -1,7 +1,7 @@
 import React from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import lieux from "./data/lieux.json"; // ✅ Import des adresses depuis lieux.json
-import "./OuNousTrouver.css";
+import "./Ounoustrouver.css";
 
 
 

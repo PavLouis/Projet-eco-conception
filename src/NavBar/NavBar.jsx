@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import './NavBar.css';
-import tarte from './tarte.svg';
+import tarte from './tarte.png';
 
 const NavBar = () => {
   return (
