@@ -7,16 +7,24 @@ const NousContacter = () => {
         <div>
             <div id='gray' className='conteneur-de-milieutage-tqt'>
                 <div className='nous-contacter-ye'>
-                    <h1>Nous contacter</h1>
+                    <div className="cenquantP">
+                        <h1>Nous contacter</h1>
+                        <div>
+                            <p>Pour toute réservation, nous vous invitions à contacter directement le restaurant par téléphone.</p>
+                            <p>* champs obligatoires.</p>
+                            <p>Nom / Prénom*</p>
+                            <input className='petite-input'></input>
+                            <p>Adresse e-mail*</p>
+                            <input className='petite-input'></input>
+                            <p>Message*</p>
+                            <input className='grande-input'></input>
+                        </div>
+                    </div>
                     <div>
-                        <p>Pour toute réservation, nous vous invitions à contacter directement le restaurant par téléphone.</p>
-                        <p>* champs obligatoires.</p>
-                        <p>Nom / Prénom*</p>
-                        <input className='petite-input'></input>
-                        <p>Adresse e-mail*</p>
-                        <input className='petite-input'></input>
-                        <p>Message*</p>
-                        <input className='grande-input'></input>
+                        <h1>Nos coordonnées</h1>
+                        <p><b>Siège Lugnac</b></p>
+                        <p>4 rue Censier, Paris 7</p>
+                        <p className='num-tel'>+33 (0)1 42 56 11 26</p>
                     </div>
                 </div>
             </div>

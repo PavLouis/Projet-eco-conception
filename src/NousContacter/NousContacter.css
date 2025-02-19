@@ -45,4 +45,14 @@
 
 .nous-contacter-ye {
     margin-bottom: 100px;
+    width: 1148px;
+    display: flex;
+}
+
+.cenquantP {
+    width: 50%;
+}
+
+.num-tel{ 
+    margin-top: 30px;
 }
