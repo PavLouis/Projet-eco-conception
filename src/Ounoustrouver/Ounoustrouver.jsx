@@ -1,5 +1,5 @@
 import React from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+// import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import lieux from "./data/lieux.json"; // ✅ Import des adresses depuis lieux.json
 import "./Ounoustrouver.css";
 
@@ -22,11 +22,11 @@ const OuNousTrouver = () => {
       <div className="ou-nous-trouver">
         <h2 className="ou-nous-trouver-title">Où nous trouver ?</h2>
         <div className="ou-nous-trouver-content">
-          <LoadScript googleMapsApiKey="AIzaSyCWj4CFcTi9zLg1kFqHGkhkFlEHOmCnFVI">
+          {/* <LoadScript googleMapsApiKey="AIzaSyCWj4CFcTi9zLg1kFqHGkhkFlEHOmCnFVI">
             <GoogleMap mapContainerStyle={mapContainerStyle} zoom={14} center={center}>
               
             </GoogleMap>
-          </LoadScript>
+          </LoadScript> */}
           <div className="ou-nous-trouver-lieux">
             {lieux.map((lieu, index) => (
               <p key={index} className="ou-nous-trouver-lieu">

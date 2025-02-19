@@ -57,27 +57,7 @@ export default defineConfig({
         drop_debugger: true
       }
     },
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          main: ['./src/main.jsx']
-        },
-        assetFileNames: (assetInfo) => {
-          const info = assetInfo.name.split('.');
-          const extType = info[info.length - 1];
-          if (/css/i.test(extType)) {
-            return 'assets/styles/[name]-[hash][extname]';
-          }
-          if (/png|jpe?g|svg/i.test(extType)) {
-            return 'assets/images/[name]-[hash][extname]';
-          }
-          return 'assets/[name]-[hash][extname]';
-        },
-        chunkFileNames: 'assets/js/[name]-[hash].js',
-        entryFileNames: 'assets/js/[name]-[hash].js',
-      }
-    },
+
     sourcemap: process.env.NODE_ENV === 'development' ? 'inline' : false
   },
 
