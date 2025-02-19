@@ -125,4 +125,4 @@
 |4036.| Entretenir son site régulièrement | ❌ | Pas dans la maquette | . | 
 |4037.| Bien choisir son thème et limiter le nombre d'extensions dans un CMS | ❌ | Pas dans la maquette | . | 
 |4038.| Sécuriser l'accès à l'administration | ✅ | Github + app sur vercel | . | 
-|4039.| Ne pas afficher les documents à l'intérieur des pages | ❌ | Pas dans la maquette | . | 
+|4039.| Ne pas afficher les documents à l'intérieur des pages | ❌ | Pas dans la maquette | . |  
