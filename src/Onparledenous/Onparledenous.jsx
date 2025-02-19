@@ -14,11 +14,11 @@ const Onparledenous = () => {
                     <h1>On parle de nous</h1>
                     <p>Nos dernières parutions dans la presse et sur internet.</p>
                     <div className='on-parle-de-nous-logo-conteneur'>
-                        <img alt="logoelle logo" src={logoelle} />
-                        <img alt="logolemonde logo" src={logolemonde} />
-                        <img alt="logovogue logo" src={logovogue} />
-                        <img alt="logocntraveler logo" src={logocntraveler} />
-                        <img alt="foupatesserie logo" src={foupatesserie} />
+                        <img loading="lazy" alt="logoelle logo" src={logoelle} />
+                        <img loading="lazy" alt="logolemonde logo" src={logolemonde} />
+                        <img loading="lazy" alt="logovogue logo" src={logovogue} />
+                        <img loading="lazy" alt="logocntraveler logo" src={logocntraveler} />
+                        <img loading="lazy" alt="foupatesserie logo" src={foupatesserie} />
                     </div>
                 </div>
             </div>
