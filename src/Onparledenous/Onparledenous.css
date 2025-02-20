@@ -42,6 +42,7 @@
 @media (max-width: 480px) {
     .on-parle-de-nous {
         padding: 10px;
+        margin: 2%;
     }
 
     .on-parle-de-nous p {

@@ -13,3 +13,28 @@
     padding: 10px;
     max-width: 418;
 }
+
+@media (max-width: 1500px) {
+    .nos-Patisseries-conteneur {
+        max-width: 1148px;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column-reverse;
+        margin: 20px
+    }
+    .nos-Patisseries-conteneur img,
+    .nos-Patisseries-conteneur div {
+        min-width: 100%;
+        padding: 2%;
+    }
+
+}
+
+
+@media (max-width: 1500px) {
+    .nos-Patisseries-conteneur {
+        margin: 10px
+    }
+
+}
+

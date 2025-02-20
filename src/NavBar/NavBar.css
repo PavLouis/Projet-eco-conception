@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 50px;
 }
 
 .nav-bar-ico {
@@ -27,4 +26,20 @@
 .nav-bar-text {
     margin: 20px;
     margin-bottom: 0px;
+}
+
+@media (max-width: 1000px) {
+    .nav-bar-conteneur {
+        height: 250px;
+    }
+    .nav-bar-text {
+        margin: 20px;
+        font-size: 20px
+    }
+}
+
+@media (max-width: 450px) {
+    .nav-bar-text {
+        margin: 0px;
+    }
 }

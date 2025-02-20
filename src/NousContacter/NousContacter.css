@@ -53,6 +53,32 @@
     width: 50%;
 }
 
-.num-tel{ 
+.num-tel {
     margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+    .nous-contacter-ye {
+        flex-direction: column;
+        margin: 0px 40px
+    }
+
+    .cenquantP {
+        width: 100%;
+    }
+
+    .padding-text {
+        padding-bottom: 20px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    .nous-contacter-ye {
+        width: 100%;
+    }
+    .nous-contacter-ye input {
+        width: 100%;
+    }
 }

@@ -10,7 +10,7 @@ const NousContacter = () => {
                     <div className="cenquantP">
                         <h1>Nous contacter</h1>
                         <div>
-                            <p>Pour toute réservation, nous vous invitions à contacter directement le restaurant par téléphone.</p>
+                            <p className='padding-text'>Pour toute réservation, nous vous invitions à contacter directement le restaurant par téléphone.</p>
                             <p>* champs obligatoires.</p>
                             <p>Nom / Prénom*</p>
                             <input className='petite-input'></input>
@@ -37,7 +37,7 @@ const NousContacter = () => {
             <div id='gray' className='conteneur-de-milieutage-tqt'>
                 <div className='footer-montionlegale'>
                     <p>Mentions légales</p>
-                    <p>Fièrement propulsé par WordPress</p>
+                    <p>Fièrement propulsé par React !</p>
                 </div>
             </ div>
         </div>
