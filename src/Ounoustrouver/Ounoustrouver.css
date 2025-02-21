@@ -1,13 +1,13 @@
-/* ✅ Conteneur prenant toute la largeur pour le fond */
+
 .ou-nous-trouver-wrapper {
   width: 100%;
-  background-color: #F5EFEA; /* ✅ Fond appliqué ici */
-  padding: 80px 0; /* ✅ Espacement haut/bas pour aérer */
+  background-color: #F5EFEA; /*  Fond appliqué ici */
+  padding: 80px 0; /*  Espacement haut/bas pour aérer */
   display: flex;
   justify-content: center;
 }
 
-/* ✅ Garde ton style précédent */
+/*  Conteneur principal */
 .ou-nous-trouver {
   width: 100%;
   max-width: 1148px;
@@ -18,6 +18,7 @@
   padding: 40px;
 }
 
+/* Titre principal */
 .ou-nous-trouver-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -27,6 +28,7 @@
   margin-bottom: 30px;
 }
 
+/*  Layout principal de la section */
 .ou-nous-trouver-content {
   display: flex;
   align-items: center;
@@ -35,31 +37,77 @@
   gap: 30px;
 }
 
+/* Carte Leaflet responsive */
 .ou-nous-trouver-map {
-  width: 564px;
+  width: 100%;
+  max-width: 564px;
   height: 404px;
 }
 
+/*  Liste des adresses */
 .ou-nous-trouver-lieux {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+/*  Nom du lieu */
 .ou-nous-trouver-nom {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 38px;
   line-height: 45.99px;
-  letter-spacing: 0%;
   color: black;
 }
 
+/*  Adresse */
 .ou-nous-trouver-lieu span {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
-  letter-spacing: 0%;
   color: black;
+}
+
+/*  Responsivité pour tablettes */
+@media (max-width: 1024px) {
+  .ou-nous-trouver-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ou-nous-trouver-lieux {
+    text-align: center;
+  }
+}
+
+/*  Responsivité pour mobiles */
+@media (max-width: 768px) {
+  .ou-nous-trouver {
+    padding: 20px;
+  }
+
+  .ou-nous-trouver-title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .ou-nous-trouver-map {
+    height: 300px;
+  }
+
+  .ou-nous-trouver-lieux {
+    gap: 10px;
+  }
+
+  .ou-nous-trouver-nom {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .ou-nous-trouver-lieu span {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
