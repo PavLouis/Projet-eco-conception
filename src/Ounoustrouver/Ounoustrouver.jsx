@@ -9,7 +9,7 @@ const OuNousTrouver = () => {
       <div className="ou-nous-trouver">
         <h2 className="ou-nous-trouver-title">Où nous trouver ?</h2>
         <div className="ou-nous-trouver-content">
-          <MapComponent /> {/* ✅ Nouvelle carte Leaflet ici */}
+          <MapComponent /> {/*  Nouvelle carte Leaflet ici */}
           <div className="ou-nous-trouver-lieux">
             {lieux.map((lieu, index) => (
               <p key={index} className="ou-nous-trouver-lieu">

@@ -5,7 +5,7 @@ import L from "leaflet";
 import lieux from "./data/lieux.json";
 import markerIcon from "./assets/markers.png"; // ✅ Import du marqueur personnalisé
 
-// ✅ Création de l'icône personnalisée pour les marqueurs
+//  Création de l'icône personnalisée pour les marqueurs
 const customIcon = new L.Icon({
   iconUrl: markerIcon,
   iconSize: [38, 38], // ✅ Ajuste la taille de l'icône
@@ -13,16 +13,16 @@ const customIcon = new L.Icon({
   popupAnchor: [0, -38], // ✅ Position du popup par rapport au marqueur
 });
 
-// ✅ Centre ajusté pour voir clairement Boulevard de l’Hôpital, Rue de Censier et Rue du Jura
+//  Centre ajusté pour voir clairement Boulevard de l’Hôpital, Rue de Censier et Rue du Jura
 const center = [48.8385, 2.3570];
 
 const MapComponent = () => {
   return (
     <MapContainer center={center} zoom={17} style={{ height: "404px", width: "100%" }}>
-      {/* ✅ Ajout d’un fond de carte OpenStreetMap */}
+      {/*  Ajout d’un fond de carte OpenStreetMap */}
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
-      {/* ✅ Ajout des marqueurs pour chaque restaurant */}
+      {/*  Ajout des marqueurs pour chaque restaurant */}
       {lieux.map((lieu, index) => (
         <Marker key={index} position={[lieu.lat, lieu.lng]} icon={customIcon}>
           <Popup>
