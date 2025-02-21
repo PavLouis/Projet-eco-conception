@@ -1,20 +1,7 @@
 import React from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import lieux from "./data/lieux.json"; // ✅ Import des adresses depuis lieux.json
+import MapComponent from "./MapComponent"; // ✅ Utilise Leaflet à la place de Google Maps
 import "./OuNousTrouver.css";
-
-
-
-const mapContainerStyle = {
-  width: "50%", // ✅ Ajusté pour la maquette
-  height: "404px",
-};
-
-const center = {
-  lat: lieux[0].lat,
-  lng: lieux[0].lng,
-};
-
+import lieux from "./data/lieux.json";
 
 const OuNousTrouver = () => {
   return (
@@ -22,11 +9,7 @@ const OuNousTrouver = () => {
       <div className="ou-nous-trouver">
         <h2 className="ou-nous-trouver-title">Où nous trouver ?</h2>
         <div className="ou-nous-trouver-content">
-          <LoadScript googleMapsApiKey="AIzaSyCWj4CFcTi9zLg1kFqHGkhkFlEHOmCnFVI">
-            <GoogleMap mapContainerStyle={mapContainerStyle} zoom={14} center={center}>
-              
-            </GoogleMap>
-          </LoadScript>
+          <MapComponent /> {/* ✅ Nouvelle carte Leaflet ici */}
           <div className="ou-nous-trouver-lieux">
             {lieux.map((lieu, index) => (
               <p key={index} className="ou-nous-trouver-lieu">
