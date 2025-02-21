@@ -1,0 +1,84 @@
+.petite-input {
+    width: 564px;
+    height: 60px;
+    top: 4208px;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f5efea;
+}
+
+.grande-input {
+    width: 564px;
+    height: 223px;
+    top: 4208px;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f5efea;
+}
+
+.nous-contacter-fond {
+    background-color: #f5efea;
+    display: flex;
+}
+
+.retrouver-nous {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.retrouver-nous h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-montionlegale {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 200px;
+}
+
+.nous-contacter-ye {
+    margin-bottom: 100px;
+    width: 1148px;
+    display: flex;
+}
+
+.cenquantP {
+    width: 50%;
+}
+
+.num-tel {
+    margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+    .nous-contacter-ye {
+        flex-direction: column;
+        margin: 0px 40px
+    }
+
+    .cenquantP {
+        width: 100%;
+    }
+
+    .padding-text {
+        padding-bottom: 20px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    .nous-contacter-ye {
+        width: 100%;
+    }
+    .nous-contacter-ye input {
+        width: 100%;
+    }
+}
