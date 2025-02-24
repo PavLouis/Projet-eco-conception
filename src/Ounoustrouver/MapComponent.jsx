@@ -18,8 +18,8 @@ const center = [48.8385, 2.3570];
 
 const MapComponent = () => {
   return (
-    <>
-    </>
+    <div>
+    </div>
     // <MapContainer center={center} zoom={17} style={{ height: "404px", width: "100%" }}>
     //   {/*  Ajout d’un fond de carte OpenStreetMap */}
     //   <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
