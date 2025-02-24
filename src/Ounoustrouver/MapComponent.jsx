@@ -18,20 +18,22 @@ const center = [48.8385, 2.3570];
 
 const MapComponent = () => {
   return (
-    <MapContainer center={center} zoom={17} style={{ height: "404px", width: "100%" }}>
-      {/*  Ajout d’un fond de carte OpenStreetMap */}
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+    <>
+    </>
+    // <MapContainer center={center} zoom={17} style={{ height: "404px", width: "100%" }}>
+    //   {/*  Ajout d’un fond de carte OpenStreetMap */}
+    //   <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
-      {/*  Ajout des marqueurs pour chaque restaurant */}
-      {lieux.map((lieu, index) => (
-        <Marker key={index} position={[lieu.lat, lieu.lng]} icon={customIcon}>
-          <Popup>
-            <strong>{lieu.nom}</strong> <br />
-            {lieu.adresse}
-          </Popup>
-        </Marker>
-      ))}
-    </MapContainer>
+    //   {/*  Ajout des marqueurs pour chaque restaurant */}
+    //   {lieux.map((lieu, index) => (
+    //     <Marker key={index} position={[lieu.lat, lieu.lng]} icon={customIcon}>
+    //       <Popup>
+    //         <strong>{lieu.nom}</strong> <br />
+    //         {lieu.adresse}
+    //       </Popup>
+    //     </Marker>
+    //   ))}
+    // </MapContainer>
   );
 };
 
