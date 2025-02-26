@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import NavBar from './NavBar/NavBar'
 import Lechef from './Lechef/Lechef'
@@ -9,7 +8,6 @@ import Carousel from './Carousel/Carousel'
 import NousContacter from './NousContacter/NousContacter'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>

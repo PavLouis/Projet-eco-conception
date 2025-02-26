@@ -1,4 +1,3 @@
-import React from "react";
 import MapComponent from "./MapComponent"; // ✅ Utilise Leaflet à la place de Google Maps
 import "./Ounoustrouver.css";
 import lieux from "./data/lieux.json";

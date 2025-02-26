@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import leftChevron from "./assets/icons/chevron-left.svg";
 import rightChevron from "./assets/icons/chevron-right.svg";
 import "./Carousel.css";
