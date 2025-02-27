@@ -19,7 +19,7 @@ export default defineConfig({
       },
       webp: {
         lossless: false,
-        quality: 1,
+        quality: 10,
       }
 
     }),
