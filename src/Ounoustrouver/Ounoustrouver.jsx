@@ -1,6 +1,6 @@
-import MapComponent from "./MapComponent"; // ✅ Utilise Leaflet à la place de Google Maps
 import "./Ounoustrouver.css";
 import lieux from "./data/lieux.json";
+import mapImage from "./assets/map-interactive.png";
 
 const OuNousTrouver = () => {
   return (
@@ -8,11 +8,13 @@ const OuNousTrouver = () => {
       <div className="ou-nous-trouver">
         <h2 className="ou-nous-trouver-title">Où nous trouver ?</h2>
         <div className="ou-nous-trouver-content">
-          <MapComponent /> {/*  Nouvelle carte Leaflet ici */}
+          <img src={mapImage} alt="Map" className="ou-nous-trouver-map" />{" "}
+          {/* Static map image */}
           <div className="ou-nous-trouver-lieux">
             {lieux.map((lieu, index) => (
               <p key={index} className="ou-nous-trouver-lieu">
-                <strong className="ou-nous-trouver-nom">{lieu.nom}</strong> <br />
+                <strong className="ou-nous-trouver-nom">{lieu.nom}</strong>{" "}
+                <br />
                 <span className="ou-nous-trouver-adresse">{lieu.adresse}</span>
               </p>
             ))}
