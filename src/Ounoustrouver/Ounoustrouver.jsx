@@ -1,6 +1,6 @@
 import "./Ounoustrouver.css";
 import lieux from "./data/lieux.json";
-import mapImage from "./assets/map-interactive.png";
+import mapImage from "./assets/map-interactive.webp";
 
 const OuNousTrouver = () => {
   return (
